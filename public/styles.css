@@ -1,0 +1,156 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#video-grid {
+    flex-grow : 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+   video {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;;
+    padding: 8px;
+  }
+
+
+  .main{
+    height: 100vh;
+    display: flex;
+  }
+
+  .main_left {
+    flex : 0.8;
+    display : flex;
+    flex-wrap : wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main_right{
+    flex : 0.2 ;
+    flex-direction: column;
+    display : flex ;
+    background-color: #1C1E20;
+  }
+  .canvas {
+    background-color: black;
+  }
+  #chat_window{
+    flex : 0.95
+  }
+
+ 
+  .chat_header{
+    display: flex;
+    flex: 0.085;
+    justify-content: center;
+    background-color: #000;
+    color : #D2D2D2;
+  }
+
+  .msgtypewindow input{
+    padding: 22px 12px;
+    /* padding-bottom: 5px; */
+    margin-bottom: 15px;
+    display: flex;
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color : #d2d2d2;
+    width: 100%;
+  }
+
+  .msgtypewindow{
+    background-color: transparent;
+  }
+
+  .Sch{
+    background-color: #1C1E20;
+    color : #D2D2D2;
+    flex : 0.05;
+  }
+
+  a{
+    color : #D2D2D2;
+  }
+
+  .canvas{
+    display: flex;
+    flex : 0.45;
+  }
+
+  .main_videos{
+    background-color: black;
+    flex : 0.45;
+  }
+
+  .controls {
+    display: flex;
+    flex-grow: 0.05;
+    color : #D2D2D2;
+    background-color:  #1C1E20;
+    /* background-color: white; */
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  h3{
+      font-family:Quicksand;
+      color : #D2D2D2;
+  }
+  p{
+    color : #D2D2D2;
+  }
+  .alert{
+    width:90%;
+    margin-top:10px;
+    margin-left: 10px;
+    padding:5px;
+    position:relative;
+    border-radius:5px;
+    box-shadow:0 0 5px 0px rgb(200, 180, 180);
+    border-left: 5px solid rgb(50, 74, 41);
+  }
+ 
+
+ 
+.main__controls__block {
+    display: flex;
+}
+
+.main__controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.main__controls__button:hover {
+    background-color: #343434;
+    border-radius: 5px;
+}
+
+.main__controls__button i {
+    font-size: 24px;
+}
+
+.leave_meeting{
+  color : red;
+}
